@@ -1,7 +1,7 @@
 # Lab 4 – Deep Generative Models with PyTorch
 
 ## Objective
-This laboratory work aims to explore and compare several **deep generative learning models** using the **PyTorch** framework.  
+This laboratory work aims to explore and compare several deep generative learning models using the PyTorch framework.  
 The focus is on understanding the behavior, advantages, and limitations of three fundamental architectures:
 
 - AutoEncoder (AE)
@@ -56,7 +56,7 @@ Each model is implemented, trained, and evaluated on an appropriate dataset.
 ### Results
 The AutoEncoder converges to a very low reconstruction loss, showing its effectiveness in reproducing MNIST digit images.
 
-![Loss Comparison](loss comparison.jpeg)
+![Loss Comparison](loss%20comparaison.jpeg)
 
 ### Discussion
 The AE focuses purely on minimizing reconstruction error.  
@@ -81,8 +81,8 @@ The VAE loss combines two components:
 \mathcal{L} = \text{Reconstruction Loss} + \text{KL Divergence}
 \]
 
-- Reconstruction loss: Binary Cross-Entropy
-- KL Divergence: Regularization toward a standard normal distribution
+- Reconstruction loss: Binary Cross-Entropy  
+- KL Divergence: Regularization toward a standard normal distribution  
 
 ### Training Parameters
 - Optimizer: Adam
@@ -90,21 +90,21 @@ The VAE loss combines two components:
 - Epochs: 20
 
 ### KL Divergence Evolution
-![KL Divergence](kl_divergence.png)
+![KL Divergence](KL%20D.jpeg)
 
 The KL divergence increases during early training and then stabilizes, indicating proper regularization of the latent space.
 
 ### Latent Space Visualization
-![VAE Latent Space](vae_latent.png)
+![VAE Latent Space](vae.jpeg)
 
 ### Analysis
 The latent space shows clear clustering corresponding to digit classes.  
-This confirms that the VAE learns a **structured and continuous latent space**, suitable for generation and interpolation.  
+This demonstrates that the VAE learns a structured and continuous latent representation, suitable for generation and interpolation.  
 Reconstructed images are slightly blurrier than those produced by the AE due to the imposed probabilistic constraint.
 
 ---
 
-##  Part 3: Generative Adversarial Network (GAN)
+## Part 3: Generative Adversarial Network (GAN)
 
 ### Architecture
 - Generator: Transposed convolutional neural network
@@ -117,14 +117,8 @@ Reconstructed images are slightly blurrier than those produced by the AE due to 
 - Different learning rates for Generator and Discriminator
 - Two Generator updates per Discriminator update
 
-### Training Dynamics
-Several techniques were applied to improve training stability and reduce:
-- Discriminator dominance
-- Mode collapse
-- Gradient instability
-
 ### Generated Samples
-![GAN Generated Images](gan_generated.png)
+![GAN Generated Images](GAN.jpeg)
 
 ### Qualitative Evaluation
 The generated images exhibit:
@@ -136,7 +130,7 @@ Although some noise remains, the results are consistent with a basic GAN trained
 
 ---
 
-##  Model Comparison
+## Model Comparison
 
 | Model | Advantages | Limitations |
 |------|-----------|-------------|
@@ -146,7 +140,7 @@ Although some noise remains, the results are consistent with a basic GAN trained
 
 ---
 
-##  Conclusion
+## Conclusion
 This laboratory work provided hands-on experience with three major deep generative modeling approaches.
 
 - The AutoEncoder excels at reconstruction but lacks generative flexibility.
@@ -158,5 +152,5 @@ All models were successfully implemented, trained, and analyzed, fulfilling the 
 ---
 
 ## Author
-**Douae El Hannach**  
+Douae El Hannach  
 Master IT Security & Big Data
