@@ -56,7 +56,7 @@ Each model is implemented, trained, and evaluated on an appropriate dataset.
 ### Results
 The AutoEncoder converges to a very low reconstruction loss, showing its effectiveness in reproducing MNIST digit images.
 
-![Loss Comparison](loss_comparison.png)
+![Loss Comparison](loss comparison.jpeg)
 
 ### Discussion
 The AE focuses purely on minimizing reconstruction error.  
